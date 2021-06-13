@@ -1,0 +1,252 @@
+{% extends 'base.html' %}
+{% block title %} Commnads: Hill Climb Racing 2 bot
+{% endblock title %}
+{% block commandsactive %} active {% endblock commandsactive %}
+{% block head %}
+<meta name="og:title" content="Commands: Hill Climb Racing 2 Discord Bot">
+<meta name="og:description" content="Categories : Wiki, Special HCR2, Economy, Moderation, Fun, Info, etc">
+        
+{% endblock head %}
+{% block style %}
+html {
+  scroll-behavior: smooth;
+}
+ .card-body {
+     padding: 1em;
+     box-shadow: 0 2px 5px 0 rgba(0,0,0,.39);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  margin-top: 20px;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+{% endblock style %}
+
+{% block body %}
+
+
+
+
+<div class="container my-2">
+
+<center><h2>Categories</center>
+<div class="my-3 text-center">
+
+<a href="#wiki" class="btn btn-dark my-2">Wiki</a>
+<a href="#special" class="btn btn-danger my-2">Special</a>
+<a href="#info" class="btn btn-primary my-2">info</a>
+<a href="#mod" class="btn btn-success my-2">Moderation</a>
+<a href="#economy" class="btn btn-warning my-2">Economy</a>
+<a href="#utility" class="btn btn-success my-2">utility</a>
+<a href="#fun" class="btn btn-danger my-2">fun</a>
+<a href="#corona" class="btn btn-dark my-2">Covid</a>
+
+</div>
+<div id="wiki">
+ <h3 class="text-center">Wiki Commnads</h3>
+ {% for command in commands %}
+ 
+ {% ifequal 'wiki' command.category %}
+
+ <div class="card text-white bg-dark mb-2" style="max-width: 100%;">
+  <div class="card-body">
+    <p class="card-text">
+     {{command.name}} : <code>{{command.ShortDescription}}</code><br>
+     Extended Help : <code>{{command.LongDescription}}</code><br>
+     Permission(s) :<code>{{command.permissions}}</code>
+    </p>
+    
+  </div>
+ </div>
+ {% endifequal %} 
+ {% endfor %} 
+</div>
+
+<div id="special">
+ <h3 class="text-center">Special HCR2 Commnads</h3>
+ {% for command in commands %}
+ 
+ {% ifequal 'special' command.category %}
+
+ <div class="card text-white bg-dark mb-2" style="max-width: 100%;">
+  <div class="card-body">
+    <p class="card-text">{{command.name}} : <code>{{command.ShortDescription}}</code><br>
+     Extended Help : <code>{{command.LongDescription}}</code><br>
+     Permission(s) :<code>{{command.permissions}}</code>
+    </p>
+    
+  </div>
+ </div>
+ {% endifequal %} 
+
+ {% endfor %}
+</div>
+
+<div id="info">
+ <h3 class="text-center">Info Commnads</h3>
+ {% for command in commands %}
+ 
+ {% ifequal 'info' command.category %}
+
+ <div class="card text-white bg-dark mb-2" style="max-width: 100%;">
+  <div class="card-body">
+    <p class="card-text">{{command.name}} : <code>{{command.ShortDescription}}</code><br>
+     Extended Help : <code>{{command.LongDescription}}</code><br>
+     Permission(s) :<code>{{command.permissions}}</code>
+    </p>
+    
+  </div>
+ </div>
+ {% endifequal %} 
+ {% endfor %} 
+</div>
+
+<div id="fun">
+ <h3 class="text-center">Fun Commnads</h3>
+ {% for command in commands %}
+ 
+ {% ifequal 'fun' command.category %}
+
+ <div class="card text-white bg-dark mb-2" style="max-width: 100%;">
+  <div class="card-body">
+    <p class="card-text">{{command.name}} : <code>{{command.ShortDescription}}</code><br>
+     Extended Help : <code>{{command.LongDescription}}</code><br>
+     Permission(s) :<code>{{command.permissions}}</code>
+    </p>
+    
+  </div>
+ </div>
+ {% endifequal %} 
+
+ {% endfor %}
+</div>
+
+<div id="economy">
+ <h3 class="text-center">Economy Commnads</h3>
+ {% for command in commands %}
+ 
+ {% ifequal 'economy' command.category %}
+
+ <div class="card text-white bg-dark mb-2" style="max-width: 100%;">
+  <div class="card-body">
+    <p class="card-text">
+     {{command.name}} : <code>{{command.ShortDescription}}</code><br>
+     Extended Help : <code>{{command.LongDescription}}</code><br>
+     Permission(s) :<code>{{command.permissions}}</code>
+    </p>
+    
+  </div>
+ </div>
+ {% endifequal %} 
+ {% endfor %} 
+</div>
+
+<div id="mod">
+ <h3 class="text-center">Moderation Commnads</h3>
+ {% for command in commands %}
+ 
+ {% ifequal 'mod' command.category %}
+
+ <div class="card text-white bg-dark mb-2" style="max-width: 100%;">
+  <div class="card-body">
+    <p class="card-text">{{command.name}} : <code>{{command.ShortDescription}}</code><br>
+     Extended Help : <code>{{command.LongDescription}}</code><br>
+     Permission(s) :<code>{{command.permissions}}</code>
+    </p>
+    
+  </div>
+ </div> 
+ {% endifequal %} 
+
+ {% endfor %}
+</div>
+
+<div id="utility">
+ <h3 class="text-center">Utility Commnads</h3>
+ {% for command in commands %}
+ 
+ {% ifequal 'utility' command.category %}
+
+ <div class="card text-white bg-dark mb-2" style="max-width: 100%;">
+  <div class="card-body">
+    <p class="card-text">{{command.name}} : <code>{{command.ShortDescription}}</code><br>
+     Extended Help : <code>{{command.LongDescription}}</code><br>
+     Permission(s) :<code>{{command.permissions}}</code>
+    </p>
+    
+  </div>
+ </div>
+ {% endifequal %} 
+
+ {% endfor %}
+</div>
+
+<div id="corona">
+ <h3 class="text-center">Corona Commnads</h3>
+ {% for command in commands %}
+ 
+ {% ifequal 'corona' command.category %}
+
+ <div class="card text-white bg-dark mb-2" style="max-width: 100%;">
+  <div class="card-body">
+    <p class="card-text">{{command.name}} : <code>{{command.ShortDescription}}</code><br>
+     Extended Help : <code>{{command.LongDescription}}</code><br>
+     Permission(s) :<code>{{command.permissions}}</code>
+    </p>
+    
+  </div>
+ </div>
+ {% endifequal %} 
+
+ {% endfor %}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+{% endblock body %}

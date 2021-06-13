@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+{% block title %} Our Staff:
+{% endblock title %}
+{% block staffactive %} active {% endblock staffactive %}
+{% block head %}
+<meta name="og:title" content="Staff: Hill Climb Racing 2 Discord Bot">
+<meta name="og:description" content="Our Staff : Developer, Host Provider, Staff, Support Team.">
+        
+{% endblock head %}
+{% block style %}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+ .card{
+    background-color: #23222b;
+    height: 40%; 
+    margin: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,.82), 0 1px 4px rgba(0,0,0,.1);
+ }
+.card-img, .card-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-radius: 50%;
+    height: 135px;
+    width: 135px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+.discordBadge{
+    width: 24px;
+    margin: 1px;
+    padding: 1px;
+}
+
+.connections{
+    width: 35px;
+    margin: 1px;
+    padding: 1px;
+}
+
+
+
+
+
+
+{% endblock style %}
+
+{% block body %}
+
+<center><div class="h2 my-1">Developers</div></center>
+ 
+<div class="container">
+  <div class="card my-3" style="width: 18rem;">
+ <center>
+  <img draggable="false" src="https://images-ext-2.discordapp.net/external/7UbNC8KrvF72Wq_1xvuI3ffxfc5KfggbtMoBcy9RehE/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/482536364714491926/a_26508a39cb0c2ba191ba83cbe087a384.gif?width=469&height=469" class="card-img-top" alt="...">
+  <p class="my-1 h4">Abhay</p>
+  <div class="card-body">
+    <img draggable="false" src="https://cdn.discordapp.com/attachments/596494082264530945/765930320922935316/756894536189476864.png" class="discordBadge my-1" data-toggle="tooltip" title="Verified Developer" alt="Verified Developer">
+    <img draggable="false" src="https://cdn.discordapp.com/attachments/596494082264530945/765933456508583946/674361732575264802.png" class="discordBadge my-1" data-toggle="tooltip" title="HypeSquad Brilliance" alt="HypeSquad Brilliance">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/674361733166399498.png" class="discordBadge my-1" data-toggle="tooltip" title="Nitro Subscriber" alt="Nitro Subscriber">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/594538340469047297.png" class="discordBadge my-1" data-toggle="tooltip" title="Staff" alt="Staff">
+    
+    
+    <p class="card-text">After a long day of college study and submission, I come to work on the HCR2 bot.</p>
+     
+     <p class="connection">Connections:</p>
+     <a href="https://www.youtube.com/channel/UCjSzxSUlxbix9D8IrOMECzg"><img draggable="false" src="https://cdn.discordapp.com/emojis/568145800601927680.png" class="connections" data-toggle="tooltip" title="Abhay's channel" alt="youtube"><a>
+     <a href="https://twitter.com/Abhay_Developer"><img draggable="false" src="https://cdn.discordapp.com/emojis/473228820824981554.png" class="connections" data-toggle="tooltip" title="Abhay's twitter" alt="twitter"><a>
+     <a href="https://open.spotify.com/user/k3h3lgjd5l2ethcqmbcho24ix"><img draggable="false" src="https://cdn.discordapp.com/emojis/681931843205201963.png" class="connections" data-toggle="tooltip" title="Abhay's spotify" alt="spotify"><a>
+  </div>
+  </center>
+ </div>
+   
+   {% comment %} ADU {% endcomment %}
+
+   <div class="card card2 my-3" style="width: 18rem;">
+ <center>
+  <img draggable="false" src="https://cdn.discordapp.com/avatars/712737377524777001/a08c34614fcc302fe01db5436cf995eb.png?size=4096" class="card-img-top" alt="...">
+  <p class="my-1 h4">A Discord User</p> 
+  <div class="card-body">
+    <img draggable="false" src="https://cdn.discordapp.com/attachments/596494082264530945/765930320922935316/756894536189476864.png" class="discordBadge my-1" data-toggle="tooltip" title="Verified Developer" alt="Verified Developer">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/674361732952489993.png" class="discordBadge my-1" data-toggle="tooltip" title="HypeSquad Balance" alt="HypeSquad Balance">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/674361733166399498.png" class="discordBadge my-1" data-toggle="tooltip" title="Nitro Subscriber" alt="Nitro Subscriber">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/594538340469047297.png" class="discordBadge my-1" data-toggle="tooltip" title="Staff" alt="Staff">
+    
+    
+    <p class="card-text">I host the bot and <br> make sure it is working when you need it. 😀</p>
+     
+     <p class="connection">Connections:</p>
+     <a href="https://twitter.com/adiscorduser69"><img draggable="false" src="https://cdn.discordapp.com/emojis/473228820824981554.png" class="connections" data-toggle="tooltip" title="Josh's twitter" alt="twitter"><a>
+     <a href="https://github.com/joshuapatel"><img draggable="false" src="https://cdn.discordapp.com/emojis/744345792172654643.png" class="connections" data-toggle="tooltip" title="Josh's github" alt="github"><a>
+     <a href="https://adiscorduser.com"><img draggable="false" src="https://cdn.discordapp.com/attachments/596494082264530945/767037498961428480/1f310.png" class="connections" data-toggle="tooltip" title="Josh's web" alt="website"><a>
+  </div>
+ </div>
+ </div>
+  {% comment %} staff {% endcomment %}
+    <center><div class="h2 my-1">Staff</div></center>
+
+  <div class="container">
+   
+   <div class="card my-3" style="width: 18rem;">
+ <center>
+  <img draggable="false" src="https://cdn.discordapp.com/avatars/150665783268212746/71312eaacaa57e95ccc36c1dcf7b6968.png?size=4096" class="card-img-top" alt="...">
+  <p class="my-1 h4">Soheab</p>
+  <div class="card-body">
+    <img draggable="false" src="https://cdn.discordapp.com/attachments/596494082264530945/765930320922935316/756894536189476864.png" class="discordBadge my-1" data-toggle="tooltip" title="Verified Developer" alt="Verified Developer">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/674361733162336266.png" class="discordBadge my-1" data-toggle="tooltip" title="HypeSquad Bravery" alt="HypeSquad Bravery">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/594538340469047297.png" class="discordBadge my-1" data-toggle="tooltip" title="Staff" alt="Staff">
+    
+    
+    <p class="card-text">I am owner of the Sparkly Bot. I like to code in Python. Forever Python (JS Sucks)</p>
+     
+     <p class="connection">Connections:</p>
+     <a href="https://twitter.com/Soheab_"><img draggable="false" src="https://cdn.discordapp.com/emojis/473228820824981554.png" class="connections" data-toggle="tooltip" title="Soheab's twitter" alt="twitter"><a>
+     <a href="https://github.com/Soheab"><img draggable="false" src="https://cdn.discordapp.com/emojis/744345792172654643.png" class="connections" data-toggle="tooltip" title="Soheab's github" alt="github"><a>
+    <a href="https://sparklybot.codes"><img draggable="false" src="https://cdn.discordapp.com/attachments/596494082264530945/767037498961428480/1f310.png" class="connections" data-toggle="tooltip" title="Soheab's web" alt="website"><a>
+  </div>
+  </center>
+ </div>
+
+
+
+   {% comment %} mahi {% endcomment %}
+   <div class="card my-3" style="width: 18rem;">
+ <center>
+  <img draggable="false" src="https://cdn.discordapp.com/avatars/243799646886035456/c6a52da123af5ceaafd470a4911af8b4.png?size=4096" class="card-img-top" alt="...">
+  <p class="my-1 h4">Mahi</p>
+  <div class="card-body">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/594538340469047297.png" class="discordBadge my-1" data-toggle="tooltip" title="Staff" alt="Staff">
+    
+    
+    <p class="card-text">I don’t like to code so I help in other ways. 😀 ________________________________</p>
+
+    <p class="connection">Connections:</p>
+    <a href="#"><img draggable="false" src="https://cdn.discordapp.com/emojis/447088530724880404.png" class="connections" data-toggle="tooltip" title="Partner" alt="partner"><a>
+     
+  </div>
+  </center>
+ </div>
+
+{% comment %} avitohol {% endcomment %}
+<div class="card my-3" style="width: 18rem;">
+ <center>
+  <img draggable="false" src="https://cdn.discordapp.com/avatars/482468633784614912/cf2094b81d9d1b9438395f8caa40cfc1.png?size=4096" class="card-img-top" alt="...">
+  <p class="my-1 h4">Avitohol</p>
+  <div class="card-body">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/674361733166399498.png" class="discordBadge my-1" data-toggle="tooltip" title="Nitro Subscriber" alt="Nitro Subscriber">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/594538340469047297.png" class="discordBadge my-1" data-toggle="tooltip" title="Staff" alt="Staff">
+    
+    
+    <p class="card-text">I manage team event and wiki commands. It's actively under developement.</p>
+
+    <p class="connection">Connections:</p>
+    <a href="#"><img draggable="false" src="https://cdn.discordapp.com/emojis/447088530724880404.png" class="connections" data-toggle="tooltip" title="Avitohol The Partner" alt="partner"><a>
+     
+  </div>
+  </center>
+ </div>
+  
+  {% comment %} Rosy {% endcomment %}
+    <div class="card my-3" style="width: 18rem;">
+ <center>
+  <img draggable="false" src="https://cdn.discordapp.com/avatars/283610109555376129/3cb2e9caa3f48d397205ef36207d4e2b.png?size=4096" class="card-img-top" alt="...">
+  <p class="my-1 h4">Razor</p>
+  <div class="card-body">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/674361733166399498.png" class="discordBadge my-1" data-toggle="tooltip" title="Nitro Subscriber" alt="Nitro Subscriber">
+    <img draggable="false" src="https://cdn.discordapp.com/emojis/594538340469047297.png" class="discordBadge my-1" data-toggle="tooltip" title="Staff" alt="Staff">
+    
+    
+    <p class="card-text">Not good at coding. I like managing and organizing stuff in discord servers.</p>
+
+    <p class="connection">Connections:</p>
+   <a href="https://www.youtube.com/channel/UCEEdBdxNcLNT24baUMnMmLQ"><img draggable="false" src="https://cdn.discordapp.com/emojis/568145800601927680.png" class="connections" data-toggle="tooltip" title="Razor's channel" alt="youtube"><a>
+  </div>
+  </center>
+ </div>
+ 
+
+
+
+
+</div>
+
+{% endblock body %}
+
+
+
+{% block script %}
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+{% endblock script %}
+

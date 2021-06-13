@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Results{% endblock title %}
+{% block blogactive %} active {% endblock blogactive %}
+{% block style %}
+body{
+    background: #4a4a4a;
+}
+.h2, h2{
+  color: white;
+}
+.col.p-4.d-flex.flex-column.position-static{
+  background: #1d1f21;
+}
+.text-primary{
+  color: white !important;
+}
+{% endblock style %}
+{% block body %}
+<div class="container">
+<h2>Search Results:</h2>
+{% if commands|length < 1 %}
+<p>Your Search <strong>{{query}}</strong> did not match to any results.</p>
+{% endif %}
+
+{% for post in commands %}
+   
+
+  post.name 
+  post.permisions
+  
+
+   
+      {% endfor %}
+
+
+</div>
+{% endblock body %}
